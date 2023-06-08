@@ -48,7 +48,7 @@ describe('UserDetailComponent', () => {
   });
 
   it('onDelete should be called', async () => {
-    spyOn(component, 'onDelete');
+    spyOn<UserDetailComponent, any>(component, 'onDelete');
 
     component.user = mockUsers[2];
     fixture.detectChanges();
